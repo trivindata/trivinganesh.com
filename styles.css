@@ -321,7 +321,7 @@ img {
 
 
 
-/* ===== Skills =====*/
+/* ===== Services =====*/
 .work__container {
   display: flex;
   justify-content: center;
@@ -354,7 +354,7 @@ img {
   padding: 10px;
   color: #fff;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 

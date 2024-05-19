@@ -114,12 +114,12 @@
           </div>
 
           <div>
-            <h2 class="about__subtitle">I'm Trivin Ganesh </h2>
+            <h2 class="about__subtitle">I'm Trivin Ganesh [BE, MBA] </h2>
             <p class="about__text">
-              A software tester with 6 years of experience.
-              Beyond my professional role, I'm an enthusiastic learner and tech enthusiast,
-              constantly seeking new challenges and opportunities to expand my knowledge.
-              As you explore my portfolio, you'll discover my journey, experiences, and the services I provide.
+              A software tester with 6 years of experience. 
+              I meticulously scrutinize website functionality and user experience, 
+              ensuring seamless navigation and optimal performance across different platforms and devices. 
+              As you explore my portfolio, you'll discover my journey, experiences, and the services I provide. 
               Let's connect and collaborate to create exceptional digital solutions together!
             </p>
           </div>
@@ -271,21 +271,14 @@
         <h2 class="section-title">Contact Me</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <input type="tel" placeholder="Mobile" class="contact__input" />
-           
-            <textarea
-                placeholder="Message"
-                name=""
-                id=""
-                class="contact__input"
-                rows="5"
-            ></textarea>
-
-            <input type="button" value="Send" class="contact__button button" />
-          </form>
+          <form id="contact-form" class="contact__form" method="post" action="send_email.php">
+            <input type="text" name="name" placeholder="Name" class="contact__input" required />
+            <input type="email" name="email" placeholder="Email" class="contact__input" required />
+            <input type="tel" name="mobile" placeholder="Mobile" class="contact__input" required />
+            <textarea name="message" placeholder="Message" class="contact__input" rows="5" required></textarea>
+            <input type="submit" value="Send" class="contact__button button" />
+        </form>
+        
         </div>
       </section>
     </main>
